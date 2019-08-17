@@ -22,4 +22,11 @@ export class LoginComponent implements OnInit {
     })
   }
 
+  sendRequest2(){
+    this.service.postBase()
+    .subscribe(data=>{
+      console.log(data)
+    })
+  }
+
 }
